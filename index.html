@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced CSS Selectors</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome People</h1>
+        <nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link special">Services</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Home </h2>
+            <p>Welcome My Friends.</p>
+        </section>
+        <section id="about">
+            <h2>About </h2>
+            <div class="profile">
+                <h3>Priyashan Gimantha</h3>
+                <p>HNDIT Student at Sri Lanka Institute of Advanced Technological Education (SLIATE)</p>
+                <p>Hikkaduwa, Southern Province, Sri Lanka</p>
+                <h4>Summary</h4>
+                <p>Aspiring Web Designer currently pursuing a Higher National Diploma in Information Technology (HNDIT) at SLIATE. Passionate about user interface design and web development, with a strong foundation in HTML, CSS, JavaScript, and Java. Engaged in creating personal and commercial websites, including a notable project for a restaurant and hotel. Proficient with Figma and committed to mastering UI principles and web technologies.</p>
+                <h4>Education</h4>
+                <ul>
+                    <li>Sri Lanka Institute of Advanced Technological Education (SLIATE) · (2022 - 2025)</li>
+                    <li>University of Moratuwa - Certificate, Web Design for Beginners · (February 2024 - March 2024)</li>
+                    <li>eLearning.lk PVT LTD - UI / UX Design Fundamentals for Beginners in Sinhala [LIVE] - Batch 02, UI/UX Design · (July 2023)</li>
+                </ul>
+                <h4>Top Skills</h4>
+                <ul>
+                    <li>JavaScript</li>
+                    <li>Cascading Style Sheets (CSS)</li>
+                    <li>Analytical Skills</li>
+                </ul>
+            </div>
+        </section>
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="service-card">
+                <h3>Web Development</h3>
+                <p>Building responsive and dynamic websites.</p>
+            </div>
+            <div class="service-card">
+                <h3>Graphic Design</h3>
+                <p>Creating visually appealing designs and illustrations.</p>
+            </div>
+            <div class="service-card">
+                <h3>SEO Optimization</h3>
+                <p>Improving search engine rankings and visibility.</p>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <address>
+                <p>Banwalgodalla, Aluthwala</p>
+                <p>0752685116 (Mobile)</p>
+                <p><a href="mailto:priyashangimantha@gmail.com">priyashangimantha@gmail.com</a></p>
+                <p><a href="https://www.linkedin.com/in/priyashangimantha-a47b3b25b">LinkedIn</a></p>
+            </address>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Priyss. All rights reserved.</p>
+        <p>Designed by Priyashan Gimantha</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

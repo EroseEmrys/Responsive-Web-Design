@@ -1,0 +1,247 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 15px;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f3f3f3;
+    color: #333;
+}
+
+header {
+    background: #16a085; /* Dark Cyan */
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    outline: none; /* Remove outline */
+}
+
+.nav-links a:hover {
+    color: #1abc9c; /* Turquoise */
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #16a085; /* Dark Cyan */
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    .nav-links li {
+        text-align: center;
+        margin: 0.5rem 0;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+}
+
+section {
+    padding: 2rem 1rem;
+    margin: 1rem 0;
+    background-color: #3498db; /* Peter River */
+    color: #fff;
+}
+
+.profile {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.profile h3 {
+    margin-top: 0;
+}
+
+.profile ul {
+    list-style: none;
+    padding: 0;
+}
+
+.profile ul li {
+    background: #5f858f;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+}
+
+address {
+    font-style: normal;
+}
+
+address a {
+    color: #2980b9; /* Belize Hole */
+    text-decoration: none;
+}
+
+address a:hover {
+    text-decoration: underline;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #2ecc71; /* Emerald */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #27ae60; /* Nephritis */
+}
+
+footer {
+    background: #34495e; /* Wet Asphalt */
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    width: 100%;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+.menu-toggle.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+a[href^="#"]:hover {
+    color: #e74c3c; /* Alizarin */
+    text-decoration: underline;
+}
+
+a[href$="services"] {
+    color: #f39c12; /* Sunflower */
+}
+
+input[type="email"] {
+    border: 2px solid #f1c40f; /* Sun Flower */
+}
+
+a.nav-link:focus {
+    outline: 2px solid #9b59b6; /* Amethyst */
+}
+
+input:required {
+    border-color: #e74c3c; /* Alizarin */
+}
+
+header h1::first-letter {
+    font-size: 3em;
+    color: #9b59b6; /* Amethyst */
+}
+
+section#contact h2::after {
+    content: " 📧";
+}
+
+nav ul li a::before {
+    content: "🔗 ";
+    color: #95a5a6; /* Concrete */
+}
+
+.service-card h3::after {
+    content: " 🔧";
+    font-size: 0.8em;
+    color: #95a5a6; /* Concrete */
+}
+
+form input[type="email"]:focus {
+    border-color: #2ecc71; /* Emerald */
+}
+
+.nav-link.special:hover::before {
+    content: "👉 ";
+    color: #f39c12; /* Sunflower */
+}
+
+.service-card:nth-of-type(3) {
+    background-color: #3498db; /* Peter River */
+}
+
+form input:focus, form textarea:focus {
+    border-color: #3498db; /* Peter River */
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5); /* Peter River */
+}
+
+.service-card:hover {
+    background-color: #2980b9; /* Belize Hole */
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
